@@ -1,9 +1,7 @@
 /************* General Rules *************/
 
 :root {
-    --secondry-color: #83677b;
-    --primary-color: #ED50F1;
-    --primary-color: #7D1286;
+    --primary-color: #7d1286;
     --secondry-color: #2e1114;
     --section-padding: 25px;
     --font-size-h2: 2.75rem;
@@ -32,11 +30,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(70, 180, 230, .2);
+    background-color: rgba(70, 180, 230, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(125, 18, 134, .7);
+    background-color: rgba(125, 18, 134, 0.7);
     border-radius: 5px;
 }
 
@@ -52,7 +50,7 @@ html {
 
 body {
     /* NOTE: font: font-style font-variant font-weight font-size/line-height font-family; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     /* font: 400 1rem/1.625rem "Open Sans", sans-serif; */
 }
 
@@ -144,7 +142,7 @@ a:focus i {
 
 /* ! ***small***  */
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .container {
         width: 750px;
     }
@@ -153,7 +151,7 @@ a:focus i {
 
 /* ! ***medium***  */
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
     .container {
         width: 970px;
     }
@@ -162,7 +160,7 @@ a:focus i {
 
 /* ! ***large***  */
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
@@ -200,7 +198,7 @@ header .container a img {
 nav .links .bar-icon {
     display: none;
     transition-property: color, background-color;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 nav ul {
@@ -221,7 +219,7 @@ nav ul li a {
     font-weight: 700;
     color: var(--secondry-color);
     transition-property: color, background-color;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 nav ul li:not(:last-child) a:hover {
@@ -239,7 +237,7 @@ nav ul li:last-child {
 
 /* ! ANCHOR: Mobile  */
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     nav .links .bar-icon {
         display: block;
         font-size: 25px;
@@ -261,7 +259,7 @@ nav ul li:last-child {
         width: 0;
         height: 0;
         border: 10px solid;
-        border-color: transparent transparent rgba(50, 150, 210, .9) transparent;
+        border-color: transparent transparent rgba(50, 150, 210, 0.9) transparent;
         position: absolute;
         bottom: 100%;
         right: calc(10% - 5px);
@@ -281,7 +279,7 @@ nav ul li:last-child {
         top: 100%;
         right: 0;
         left: 0;
-        background-color: rgba(50, 150, 210, .9);
+        background-color: rgba(50, 150, 210, 0.9);
         text-align: center;
         padding: 30px 20px;
         z-index: 100;
@@ -314,7 +312,7 @@ nav ul li:last-child {
     width: 100%;
     height: 100%;
     background: #63a4ff;
-    background: linear-gradient(315deg, rgba(99, 164, 255, .8) 0%, rgba(0, 0, 0, .2) 60%, rgba(131, 234, 241, .5) 74%);
+    background: linear-gradient(315deg, rgba(99, 164, 255, 0.8) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(131, 234, 241, 0.5) 74%);
 }
 
 .landing .container {
@@ -335,7 +333,7 @@ nav ul li:last-child {
     border-radius: 50%;
     padding: 5px;
     background-color: #eee;
-    transition: background-color .3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
     flex-basis: 20%;
 }
 
@@ -356,7 +354,7 @@ nav ul li:last-child {
 .landing h1 {
     margin: 0;
     color: var(--secondry-color);
-    font-size: calc(var(--font-size-h2) + .2rem);
+    font-size: calc(var(--font-size-h2) + 0.2rem);
     font-weight: 700;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px #e11d74;
@@ -372,7 +370,7 @@ nav ul li:last-child {
 
 /* ! ANCHOR: Mobile  */
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .landing .container {
         flex-direction: column;
         justify-content: space-between;
@@ -384,10 +382,10 @@ nav ul li:last-child {
     }
     .landing h1 {
         margin-block: 20px;
-        font-size: calc(var(--font-size-h2) - .75rem);
+        font-size: calc(var(--font-size-h2) - 0.75rem);
     }
     .landing p {
-        font-size: calc(var(--font-size-p) - .6rem);
+        font-size: calc(var(--font-size-p) - 0.6rem);
     }
 }
 
@@ -397,7 +395,7 @@ nav ul li:last-child {
 .projects {
     padding-block: var(--section-padding);
     text-align: center;
-    background-color: rgba(100, 180, 250, .15);
+    background-color: rgba(100, 180, 250, 0.15);
 }
 
 .projects .projects-holder {
@@ -406,14 +404,14 @@ nav ul li:last-child {
     justify-content: space-between;
     align-items: center;
     place-items: center;
-    gap: 15% 5%;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
 }
 
 
 /* ! ANCHOR: Mobile  */
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .projects .projects-holder {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -427,12 +425,12 @@ nav ul li:last-child {
 }
 
 .projects .project-card:hover {
-    box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, .6);
+    box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.6);
 }
 
 .projects .project-card img {
     width: 100%;
-    transition: transform .5s ease-in;
+    transition: transform 0.5s ease-in;
 }
 
 .projects .project-card:hover img {
@@ -446,8 +444,7 @@ nav ul li:last-child {
     padding: 15px 20px;
     position: absolute;
     bottom: -100%;
-    left: 0;
-    transition: all .5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .projects .project-card:hover .card-text {
@@ -481,9 +478,9 @@ nav ul li:last-child {
 
 /* ! ANCHOR: Mobile  */
 
-@media (max-width:400px) {
+@media (max-width: 767px) {
     .card-text h3 {
-        font-size: calc(var(--font-size-h3) - .5rem);
+        font-size: calc(var(--font-size-h3) - 0.5rem);
     }
     .card-text .card-icons i {
         font-size: 20px;
@@ -495,7 +492,7 @@ nav ul li:last-child {
 
 .skills {
     padding-block: var(--section-padding);
-    background-color: rgba(100, 180, 250, .25);
+    background-color: rgba(100, 180, 250, 0.25);
 }
 
 .skills h2 {
@@ -534,8 +531,8 @@ nav ul li:last-child {
 .skills .bar {
     flex: 1;
     height: 30px;
-    background-color: rgba(250, 250, 250, .5);
-    border: 1px solid rgba(250, 250, 250, .8);
+    background-color: rgba(250, 250, 250, 0.5);
+    border: 1px solid rgba(250, 250, 250, 0.8);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -562,13 +559,13 @@ nav ul li:last-child {
 
 /* ! ANCHOR: Mobile  */
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
     .skills .bar-box {
         flex-direction: column;
         border: 3px outset #fff;
         box-shadow: 0px 6px 7px -4px rgb(0 0 0 / 30%);
         padding: 20px;
-        transition: box-shadow .3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
     }
     .skills .bar-box:hover {
         position: relative;
@@ -583,8 +580,15 @@ nav ul li:last-child {
     .skills .bar-box .java {
         margin-bottom: 5px;
     }
+    .skills .bar span {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+    }
     .skills .bar span::before {
-        font-size: .85rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -592,7 +596,7 @@ nav ul li:last-child {
 /* ******* Contact ******* */
 
 .contact {
-    background-color: rgba(100, 180, 250, .15);
+    background-color: rgba(100, 180, 250, 0.15);
 }
 
 .contact .container {
@@ -602,7 +606,7 @@ nav ul li:last-child {
 
 .contact-email {
     color: #40dab2;
-    text-shadow: 1px 1px 2px #999;
+    text-shadow: 0px 0px 1px #000;
     font-size: var(--font-size-p);
     font-weight: 700;
 }
@@ -615,12 +619,12 @@ nav ul li:last-child {
 
 /* ! ANCHOR: Mobile  */
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
     .contact h2 {
-        font-size: calc(var(--font-size-h2) - .5rem);
+        font-size: calc(var(--font-size-h2) - 0.5rem);
     }
     .contact-email {
-        font-size: clac(var(--font-size-p) - .25rem);
+        font-size: clac(var(--font-size-p) - 0.25rem);
     }
 }
 
@@ -633,18 +637,18 @@ nav ul li:last-child {
 
 .gmail-icon {
     padding: 5px;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     bottom: 60px;
     right: 20px;
-    background-color: rgba(250, 250, 250, .4);
+    background-color: rgba(250, 250, 250, 0.4);
     border-radius: 50%;
     box-shadow: 0px 0px 3px 3px rgb(0 0 0 / 30%);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: box-shadow .3s ease-in;
+    transition: box-shadow 0.3s ease-in;
 }
 
 .gmail-icon:hover {
@@ -669,7 +673,7 @@ footer .container {
 footer .container p {
     flex: 1;
     margin-block: 10px;
-    font-size: calc(var(--font-size-p) - .5rem);
+    font-size: calc(var(--font-size-p) - 0.5rem);
 }
 
 footer .container p strong a {
@@ -692,7 +696,7 @@ footer .social-icons li a {
     font-weight: 400;
     border-radius: 50%;
     box-shadow: 0px 5px 10px -4px rgb(0 0 0 / 15%), 0px -5px 10px -4px rgb(0 0 0 / 15%);
-    background-color: rgba(250, 250, 250, .2);
+    background-color: rgba(250, 250, 250, 0.2);
 }
 
 footer .social-icons li a:hover {
@@ -703,7 +707,7 @@ footer .social-icons li a:hover {
 
 /* ! ANCHOR: Mobile  */
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     footer .container {
         flex-direction: column;
     }
