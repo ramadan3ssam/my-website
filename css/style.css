@@ -322,7 +322,7 @@ nav ul li:last-child {
     align-items: center;
     justify-content: space-between;
     place-items: center;
-    gap: 15%;
+    gap: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -370,11 +370,27 @@ nav ul li:last-child {
 
 /* ! ANCHOR: Mobile  */
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .landing .container {
         flex-direction: column;
-        justify-content: space-between;
-        /* text-align: center; */
+        justify-content: space-evenly;
+        text-align: center;
+        gap: 0;
+    }
+    .landing .my-image {
+        width: 100px;
+    }
+    .landing h1 {
+        margin-block: 20px;
+        font-size: calc(var(--font-size-h2) - 0.75rem);
+    }
+    .landing p {
+        font-size: calc(var(--font-size-p) - 0.6rem);
+    }
+}
+
+@media (min-width:481px) and (max-width: 767px) {
+    .landing .container {
         text-align: center;
     }
     .landing .my-image {
@@ -517,15 +533,19 @@ nav ul li:last-child {
 }
 
 .skills .bar-box .js-icon {
-    padding-bottom: 5px;
+    padding: 5px;
     background-color: #000;
     -webkit-clip-path: inset(5% 5%);
-    clip-path: inset(5% 5%);
+    clip-path: inset(10% 10%);
 }
 
 .skills .bar-box .icon-label {
     margin: 5px;
     font-size: 12px;
+}
+
+.skills .bar-box .icon-label:last-child {
+    margin-top: 0;
 }
 
 .skills .bar {
