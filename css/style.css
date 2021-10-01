@@ -544,8 +544,9 @@ nav ul li:last-child {
     font-size: 12px;
 }
 
-.skills .bar-box .icon-label:last-child {
+.skills .bar-box .java .icon-label {
     margin-top: 0;
+    font-size: 13px;
 }
 
 .skills .bar {
