@@ -624,16 +624,53 @@ nav ul li:last-child {
     text-align: center;
 }
 
-.contact-email {
-    color: #40dab2;
-    text-shadow: 0px 0px 1px #000;
-    font-size: var(--font-size-p);
-    font-weight: 700;
+
+/* contact form  */
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.contact-email:hover,
-.contact-email:focus {
-    color: var(--primary-color);
+.contact form input[type='text'],
+.contact form input[type='email'],
+.contact form textarea {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    caret-color: var(--primary-color);
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: 1px solid var(--primary-color);
+    border: none;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form input[type='submit'] {
+    padding: 15px 20px;
+    margin-left: auto;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.contact form input[type='submit']:hover {
+    cursor: pointer;
+}
+
+.contact form input[type='submit']:focus {
+    position: relative;
+    top: 1px;
 }
 
 
@@ -642,9 +679,6 @@ nav ul li:last-child {
 @media (max-width: 400px) {
     .contact h2 {
         font-size: calc(var(--font-size-h2) - 0.5rem);
-    }
-    .contact-email {
-        font-size: clac(var(--font-size-p) - 0.25rem);
     }
 }
 
